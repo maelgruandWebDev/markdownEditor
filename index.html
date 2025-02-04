@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Éditeur Markdown">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1>Markdown Editor</h1>
+    <textarea id="editor" placeholder="Write here in Markdown ...."></textarea>
+    <br><br>
+
+    <h2>HTML preview here</h2>
+    <div id="preview"></div>
+    <button id="sendButton">Send</button>
+   <br><br><br>
+
+    <footer><p>Developped by Mael Gruand, &copy; All rights reserved</p></footer>
+    <script type="module" src="renderer.js"></script>
+</body>
+</html>
+

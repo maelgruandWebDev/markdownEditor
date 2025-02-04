@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --font: 18px;
+    --font1: 16px;
+    --padding: 30px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    max-width: 900px;
+    height: 250px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+#preview {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px var(--dark-color);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: --;
+    line-height: 1.6;
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+button:active {
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea, #preview, button {
+        max-width: 100%;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 25px 0;
+    border: solid 1px #333;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "MarkdownEditor",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "build": "electron-builder",
+      "win": {
+        "icon": "assets/favicon.ico"
+      },
+      "linux": {
+        "icon": "assets/favicon.png"
+      }
+  },
+  "dependencies": {
+    "marked": "^15.0.6"
+  },
+  "devDependencies": {
+    "electron": "^34.0.2",
+    "electron-builder": "^25.1.8"
+  }
+}
