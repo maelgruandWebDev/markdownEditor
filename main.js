@@ -33,9 +33,11 @@ app.on('window-all-closed', () => {
 
 // Gestion du Markdown
 ipcMain.handle('convertMarkdown', (event, markdownText) => {
+    console.log("Texte recu dans main.js :", markdownText);
     try {
-        console.log("Texte reçu dans main.js :", markdownText);
-        return marked.parse(markdownText);
+        const html = marked.parse(markdownText);
+        console.log("HTML converti :", html);
+        return html;
     } catch (error) {
         console.error('Erreur lors de la conversion Markdown:', error);
         return '';
