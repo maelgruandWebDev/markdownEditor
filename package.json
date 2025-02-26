@@ -6,18 +6,19 @@
   "scripts": {
     "start": "npx electron .",
     "build": "electron-builder",
-      "win": {
-        "icon": "assets/favicon.ico"
-      },
-      "linux": {
-        "icon": "assets/favicon.png"
-      }
+    "win": {
+      "icon": "assets/favicon.ico"
+    },
+    "linux": {
+      "icon": "assets/favicon.png"
+    }
   },
   "dependencies": {
-    "marked": "^15.0.6"
+    "marked": "^15.0.7",
+    "market": "^1.0.0"
   },
   "devDependencies": {
-    "electron": "^34.0.2",
+    "electron": "^34.2.0",
     "electron-builder": "^25.1.8"
   }
 }

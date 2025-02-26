@@ -7,21 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Éditeur Markdown">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
     <title>Markdown Editor</title>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <h1>Markdown Editor</h1>
+    <br><br><br>
+    <!-- Barres d'outils avec les boutons -->
+    <div id="toolbar">
+        <button id="boldBtn">Bold</button>
+        <button id="italicBtn">Italic</button>
+        <button id="h1Btn">H1</button>
+        <button id="h2Btn">H2</button>
+        <button id="h3Btn">H3</button>
+        <button id="listBtn">List</button>
+        <button id="numListBtn">Numbered List</button>
+        <button id="linkBtn">Link</button>
+        <button id="imageBtn">Image</button>
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+    </div>
+
+    <br><br><br><br>
     <textarea id="editor" placeholder="Write here in Markdown ...."></textarea>
     <br><br>
 
     <h2>HTML preview here</h2>
     <div id="preview"></div>
-    <button id="sendButton">Send</button>
-   <br><br><br>
+    <br>
 
+    <button>Send</button>
+    
+
+    <br><br><br>
     <footer><p>Developped by Mael Gruand, &copy; All rights reserved</p></footer>
+
     <script type="module" src="renderer.js"></script>
 </body>
 </html>
-
